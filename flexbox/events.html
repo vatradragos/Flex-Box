@@ -1,0 +1,142 @@
+<!-- Created by Dragoş Vatră  0743503240  vatradragos@yaoo.com -->
+<!-- Start Web Page -->
+<!DOCTYPE html>
+<html>
+<!-- Start <head> elements -->
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>My Town App - Events - Created and built by Dragoș Vatră</title>
+		<link rel="icon" type="image/png" href="favicon/favicon.png"/>
+	    <!-- Start Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<!-- Stop Google Font -->
+		<!-- Start CSS Libreries -->
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	    <!-- Stop CSS Libreries -->
+        <!-- Start Stylesheet -->
+	    <link rel="stylesheet" href="css/events.css">
+	    <!-- Stop Stylesheet -->
+	</head>
+<!-- Stop <head> elements -->
+<!-- Start <body> elements -->
+<body id="body">
+	<video id="concert" src="video/video.mp4" autoplay muted loop></video>
+	<!-- Start <header> elements -->
+	<header>
+		<h2>It's Party Time!</h2>
+		<h4>Book tickets for you and your friends</h4>
+		<h4>To add a ticket, click "Add". To delete a ticket, click "Delete"</h4>
+		<div class="events">
+			<div class="ticket ticket-1">
+			  <div class="date">
+			    <span class="day" id="day_concert_1">25</span>
+			    <span class="month-and-time">NOV</br><span class="small">9PM</span><br><br><br><span class="add" id="add_1" onclick="addParty_1(event)">Add</span><span class="delete" id="delete_1" onclick="deleteParty_1(event)">Delete</span></span>
+			  </div>
+			  <div class="artist">
+			    <span class="name" id="name_concert_1">GROW MAXIM</span>
+			    </br>
+				<span class="live small">LIVE</span>
+			  </div>
+			  <div class="location">
+			    <span id="location_concert_1">DOWN TOWN</span>
+			    </br>
+			    <span class="small"><span id="place_concert_1">TEMPLE PUB</span>
+			  </div>
+			  <div class="rip">
+			  </div>
+			  <div class="cta">
+			    <a class="live" href="https://www.youtube.com/watch?v=e42x6z1I9t4" target="_blank">LIVE PREVIEW</a>
+			  </div>
+			</div>
+			<div class="ticket ticket-2">
+			  <div class="date">
+			    <span class="day">15</span>
+			    <span class="month-and-time">DEC</br><span class="small">11PM</span><br><br><br><span class="add" id="add_2" onclick="addParty_2(event)">Add</span><span class="delete" id="delete_2" onclick="deleteParty_2(event)">Delete</span></span>
+			  </div>
+			  <div class="artist">
+			    <span class="name" id="name_concert_2">LUCKY WONDER</span>
+			    </br>
+				<span class="live small">LIVE</span>
+			  </div>
+			  <div class="location">
+			    <span id="location_concert_2">DOWN TOWN</span>
+			    </br>
+			    <span class="small"><span id="place_concert_2">SISS'L PUB</span>
+			  </div>
+			  <div class="rip">
+			  </div>
+			  <div class="cta">
+			    <a class="live" href="https://www.youtube.com/watch?v=e42x6z1I9t4" target="_blank">LIVE PREVIEW</a>
+			  </div>
+			</div>
+			<div class="ticket ticket-3">
+			  <div class="date">
+			    <span class="day">18</span>
+			    <span class="month-and-time">OCT</br><span class="small">7PM</span><br><br><br><span class="add" id="add_3" onclick="addParty_3(event)">Add</span><span class="delete" id="delete_3" onclick="deleteParty_3(event)">Delete</span></span>
+			  </div>
+			  <div class="artist">
+			    <span class="name" id="name_concert_3">CLONNY ICE</span>
+			    </br>
+				<span class="live small">LIVE</span>
+			  </div>
+			  <div class="location">
+			    <span id="location_concert_3">DOWN TOWN</span>
+			    </br>
+			    <span class="small"><span id="place_concert_3">REPLACE PUB CENTER</span>
+			  </div>
+			  <div class="rip">
+			  </div>
+			  <div class="cta">
+			    <a class="live" href="https://www.youtube.com/watch?v=e42x6z1I9t4" target="_blank">LIVE PREVIEW</a>
+			  </div>
+			</div>
+			<div class="ticket ticket-4">
+			  <div class="date">
+			    <span class="day">15</span>
+			    <span class="month-and-time">JUL</br><span class="small">12PM</span><br><br><br><span class="add" id="add_4" onclick="addParty_4(event)">Add</span><span class="delete" id="delete_4" onclick="deleteParty_4(event)">Delete</span></span>
+			  </div>
+			  <div class="artist">
+			    <span class="name" id="name_concert_4">BALLANCE Q</span>
+			    </br>
+				<span class="live small">LIVE</span>
+			  </div>
+			  <div class="location">
+			    <span id="location_concert_4">DOWN TOWN</span>
+			    </br>
+			    <span class="small"><span id="place_concert_4">COUNTER PUB</span>
+			  </div>
+			  <div class="rip">
+			  </div>
+			  <div class="cta">
+			    <a class="live" href="https://www.youtube.com/watch?v=e42x6z1I9t4" target="_blank">LIVE PREVIEW</a>
+			  </div>
+			</div>
+		</div>
+	</header>
+	<!-- Stop <header> elements -->
+	<!-- Start Table elements -->
+	<div class="table">
+		<table id="table">
+			<tr>
+				<caption>This is your ticket(s) status</caption>
+					<td style="width: 25%;">Where?</td>
+					<td style="width: 25%;">Concert Name</td>
+					<td style="width: 25%;">Place</td>
+					<td style="width: 25%;">Date and Time</td>
+			</tr>
+		</table>
+	</div>
+	<div class="button">
+		<a href="loader.html" id="table_button">Book and Logout</a><br>
+	</div>
+	<!-- Stop Table elements -->
+	<!-- Start <script> elements -->
+	<script src="js/table.js" type="text/javascript"></script>
+	<!-- Stop <script> elements -->
+</body>
+<!-- Stop <body> elements -->
+</html>
+<!-- Stop Web Page -->

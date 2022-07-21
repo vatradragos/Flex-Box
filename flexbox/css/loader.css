@@ -1,0 +1,54 @@
+/* Start general style */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+  	background: #347fc3;
+  	width: 100%;
+  	overflow-x: hidden;
+  	overflow-y: hidden;
+}
+/* Stop general style */
+/* Start <header> style */
+.bar {
+  	position: relative;
+  	height: 5px;
+  	width: 500px;
+  	margin: 0 auto;
+  	background: #fff;
+  	margin-top: 30%;
+}
+
+.circle {
+  	position: absolute;
+  	top: -75px;
+  	margin-left: -45px;
+  	height: 80px;
+  	width: 80px;
+  	left: 0;
+  	background: #fff;
+  	border-radius: 30%;
+	  animation: move 5s infinite;
+}
+
+p {
+  	position: absolute;
+  	top: -35px;
+  	right: 50px;
+  	text-transform: uppercase;
+  	color: #347fc3;
+  	font-family: helvetica, sans-serif;
+  	font-weight: bold;
+}
+
+@keyframes move {
+  	0% {left: 0;}
+  	50% {left: 100%; -webkit-transform: rotate(450deg); width: 200px; height: 200px;}
+  	75% {left: 100%; -webkit-transform: rotate(450deg); width: 250px; height: 250px;}
+  	100% {right: 100%;}
+}
+/* Stop <header> style */
+

@@ -1,0 +1,359 @@
+/* Start general style */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #436ea5;
+}
+/* Stop general style */
+/* Start <header> style */
+#concert {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	z-index: -1;
+}
+
+header h2 {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 3em;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 10px 10px 10px;
+  	text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+header h4 {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 10px 10px 10px;
+  	text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+.ticket {
+	position: relative;
+	font-family: sans-serif;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	background-color: #04030C;
+	width: 700px;
+	height: 300px;
+	border-radius: 15px;
+	filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); 
+	display: block;
+	margin: 5% auto 5% auto;
+	color: #fff;
+}
+
+.date {
+  	margin: 15px;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); 
+}
+
+.date .day{
+  	font-size: 80px;
+  	float: left;
+}
+
+.date .month-and-time {
+  	float: left;
+  	margin: 15px 0 0 0;
+  	font-weight: bold;
+}
+
+.add {
+	cursor: pointer;
+	color: #fff;
+	font-weight: bolder;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+.add:hover {
+	border: 2px solid blue;
+	background-color: blue;
+	padding: 2px 2px 2px 2px;
+	text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+	transition: all 0.3s ease;
+}
+
+.delete {
+	cursor: pointer;
+	color: #fff;
+	background-color: rgb(126, 0, 0);
+	font-weight: bolder;
+	border: 2px solid rgb(126, 0, 0);
+	border-radius: 5px;
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+.delete:hover {
+	background-color: rgb(126, 0, 0);
+	padding: 2px 2px 2px 2px;
+	text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+	transition: all 0.3s ease;
+}
+
+.artist {
+  	font-size: 30px;
+  	margin: 10px 100px 0 40px;
+  	float: left;
+  	font-weight: bold;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); 
+}
+
+.location {
+  	float: left;
+  	margin: 135px 0 0 78px;
+  	font-size: 30px;
+  	font-weight: bold;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); 
+}
+
+.location::before {
+  	background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cb/QRCodeWikipedia.png');
+  	background-size: 110px 110px;
+  	width: 110px; 
+  	height: 110px;
+  	content:"";
+  	display: inline-block;
+  	float: left;
+  	position: absolute;
+  	left: -160px;
+  	bottom: 5px;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); 
+}
+
+.rip {
+  	border-right: 8px dotted #436ea5;
+  	height: 300px;
+  	position: absolute;
+  	top: 0;
+  	left: 530px;
+}
+
+.cta .live {
+	cursor: pointer;
+  	position: absolute;
+  	top: 135px;
+  	right: 15px;
+  	display: block;
+  	font-size: 12px;
+  	font-weight: bold;
+  	background-color: #436ea5;
+  	padding: 10px 20px;
+  	border-radius: 25px;
+  	color: #fff;
+  	text-decoration: none;
+    transform: rotate(-90deg);
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); 
+}
+
+.cta .live:hover {
+	filter: invert(100%); 
+}
+
+.small {
+  	font-weight: 200;
+}
+
+.ticket-1 {
+    background-image: url(https://evolve-center.ro/wp-content/uploads/2018/08/aditya-chinchure-494048-unsplash.jpg);
+}
+
+.ticket-2{
+    background-image: url(https://mspmag.com/downloads/51225/download/shutterstock_696332926.jpg?cb=5b21ba3e87f20324f36e2a2e13fe438c&w=1280);
+}
+
+.ticket-3{
+    background-image: url(https://www.europafm.ro/wp-content/uploads/2019/05/Nocturn-alaturi-de-Carlas-Dreams-la-ROMEXPO-0028.jpg);
+}
+
+.ticket-4{
+    background-image: url(https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA3dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjEl/MkYwMyUyRjI4JTJGMTMwNjE5N18xMzA2/MTk3X2NvbmNlcnQtYmFyY2Vsb25hMy5q/cGcmaGFzaD00YTNkNDBjZGRjMDMzMDU5YmI0YmExNjBhNmFjYTMxMg==.jpg);
+}
+
+@media (max-width: 1000px) {
+	.ticket-1, .ticket-2, .ticket-3, .ticket-4 {
+		width: 90%;
+	}
+}
+
+@media (max-width: 900px) {
+	.ticket-1, .ticket-2, .ticket-3, .ticket-4 {
+		width: 80%;
+	}
+	.location {
+		display: none;
+	}
+	.location::before {
+		display: none;
+	}
+	.rip {
+		display: none;
+	}
+	.cta .live {
+		display: none;
+	}
+	.small {
+		display: none;
+	}
+}
+
+@media (max-width: 700px) {
+	.ticket-1, .ticket-2, .ticket-3, .ticket-4 {
+		width: 70%;
+	}
+	.location {
+		display: none;
+	}
+	.location::before {
+		display: none;
+	}
+	.rip {
+		display: none;
+	}
+	.cta .live {
+		display: none;
+	}
+	.small {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.ticket-1, .ticket-2, .ticket-3, .ticket-4 {
+		width: 50%;
+	}
+	.small {
+		display: none;
+	}
+}
+
+@media (max-width: 300px) {
+	.ticket-1, .ticket-2, .ticket-3, .ticket-4 {
+		width: 50%;
+	}
+	.small {
+		display: none;
+	}
+}
+/* Stop <header> style */
+
+/* Start Table style */
+table caption {
+	text-transform: uppercase;
+}
+
+table, th, td {
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+	padding: 2px 2px 2px 2px;
+	border: 1px solid #fff;
+	color: white;
+	text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+table td:hover {
+	background-color: blue;
+}
+
+caption {
+	margin-top: 10px;
+	margin-bottom: 10px;;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.button a {
+	font-weight: bold;
+	color: white;
+	background-color: blue;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	text-decoration: none;
+	font-size: 1em;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.button a:hover {
+	color: blue;
+	background-color: white;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	text-decoration: none;
+	font-size: 1em;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	transition: all ease 1s;
+}
+/* Stop Table style */
+
